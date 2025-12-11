@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:services="clr-namespace:FinanzasApp.Services"
+             x:Class="FinanzasApp.Views.ApiPage"
+             Shell.NavBarIsVisible="False">
+
+    <!-- Fondo dinámico -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#050816" Offset="0.0" />
+            <GradientStop Color="#020617" Offset="0.5" />
+            <GradientStop Color="#020617" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid>
+
+        <!-- BURBUJAS DE COLOR -->
+        <AbsoluteLayout>
+
+            <Ellipse WidthRequest="280"
+                     HeightRequest="280"
+                     Opacity="0.40">
+                <Ellipse.Fill>
+                    <RadialGradientBrush Center="0.5,0.5" Radius="0.6">
+                        <GradientStop Color="#00f5ff" Offset="0.0" />
+                        <GradientStop Color="#00f5ff00" Offset="1.0" />
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+
+            <Ellipse WidthRequest="240"
+                     HeightRequest="240"
+                     Opacity="0.35"
+                     TranslationX="160"
+                     TranslationY="500">
+                <Ellipse.Fill>
+                    <RadialGradientBrush Center="0.5,0.5" Radius="0.6">
+                        <GradientStop Color="#ff38ff" Offset="0.0" />
+                        <GradientStop Color="#ff38ff00" Offset="1.0" />
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+
+        </AbsoluteLayout>
+
+        <!-- CONTENIDO -->
+        <Grid Padding="24" RowDefinitions="Auto,Auto,*">
+
+            <!-- TÍTULO -->
+            <Grid Grid.Row="0" ColumnDefinitions="Auto,*">
+                <Label Text="FinanzasApp"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="White"/>
+
+                <Label Grid.Column="1"
+                       Text="API REST"
+                       HorizontalTextAlignment="End"
+                       VerticalTextAlignment="Center"
+                       TextColor="#94A3B8"
+                       FontSize="14"/>
+            </Grid>
+
+            <!-- BOTONES CRUD -->
+            <Grid Grid.Row="1" ColumnDefinitions="*,*,*,*" ColumnSpacing="10" Margin="0,16,0,16">
+
+                <!-- GET -->
+                <Button Text="GET"
+                        Grid.Column="0"
+                        CornerRadius="14"
+                        HeightRequest="40"
+                        Command="{Binding LoadCommand}">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="#22D3EE" Offset="0.0"/>
+                            <GradientStop Color="#6366F1" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+                <!-- POST -->
+                <Button Text="POST"
+                        Grid.Column="1"
+                        CornerRadius="14"
+                        BackgroundColor="#0F172A"
+                        TextColor="#E5E7EB"
+                        HeightRequest="40"
+                        Command="{Binding CreateCommand}"/>
+
+                <!-- PUT -->
+                <Button Text="PUT"
+                        Grid.Column="2"
+                        CornerRadius="14"
+                        BackgroundColor="#0F172A"
+                        TextColor="#E5E7EB"
+                        HeightRequest="40"
+                        Command="{Binding UpdateCommand}"/>
+
+                <!-- DELETE -->
+                <Button Text="DELETE"
+                        Grid.Column="3"
+                        CornerRadius="14"
+                        BackgroundColor="#0F172A"
+                        TextColor="#E5E7EB"
+                        HeightRequest="40"
+                        Command="{Binding DeleteCommand}"/>
+
+            </Grid>
+
+            <!-- LISTA DE RESPUESTAS -->
+            <CollectionView Grid.Row="2"
+                            ItemsSource="{Binding Posts}"
+                            Margin="0,10,0,0">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="services:ApiPost">
+                        <Border StrokeShape="RoundRectangle 18"
+                                StrokeThickness="0"
+                                BackgroundColor="#0B1220"
+                                Padding="16"
+                                Margin="0,0,0,14">
+
+                            <VerticalStackLayout Spacing="6">
+                                <Label Text="{Binding title}"
+                                       TextColor="White"
+                                       FontAttributes="Bold"
+                                       FontSize="15"/>
+
+                                <Label Text="{Binding body}"
+                                       TextColor="#94A3B8"
+                                       FontSize="13"/>
+                            </VerticalStackLayout>
+
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+
+        </Grid>
+
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:FinanzasApp.ViewModels"
+             xmlns:models="clr-namespace:FinanzasApp.Models"
+             xmlns:conv="clr-namespace:FinanzasApp.Converters"
+             x:Class="FinanzasApp.Views.DashboardPage"
+             x:DataType="viewModels:DashboardViewModel"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#050816">
+
+    <ContentPage.Resources>
+        <!-- Color verde/rojo según IsIncome -->
+        <conv:BoolToColorConverter x:Key="AmountColor"
+                                   TrueColor="#22c55e"
+                                   FalseColor="#f97373" />
+    </ContentPage.Resources>
+
+    <Grid Padding="20"
+          RowDefinitions="Auto,Auto,Auto,*,Auto">
+
+        <!-- CABECERA -->
+        <Grid Grid.Row="0"
+              ColumnDefinitions="Auto,*"
+              Margin="0,0,0,10">
+            <Label Text="FinanzasApp"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="White" />
+            <Label Grid.Column="1"
+                   Text="Panel principal"
+                   HorizontalOptions="End"
+                   VerticalOptions="Center"
+                   FontSize="14"
+                   TextColor="#9CA3AF" />
+        </Grid>
+
+        <!-- TARJETA INGRESOS / GASTOS -->
+        <Border Grid.Row="1"
+                Margin="0,10,0,0"
+                BackgroundColor="#111827"
+                StrokeThickness="0"
+                Padding="16">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="24" />
+            </Border.StrokeShape>
+
+            <Grid ColumnDefinitions="*,*">
+                <!-- Ingresos -->
+                <VerticalStackLayout Spacing="4">
+                    <Label Text="Ingresos"
+                           FontSize="13"
+                           TextColor="#4ADE80" />
+                    <Label Text="{Binding TotalIngresos, StringFormat='${0:F2}'}"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="White" />
+                </VerticalStackLayout>
+
+                <!-- Gastos -->
+                <VerticalStackLayout Grid.Column="1"
+                                     Spacing="4"
+                                     HorizontalOptions="End">
+                    <Label Text="Gastos"
+                           FontSize="13"
+                           HorizontalOptions="End"
+                           TextColor="#F97373" />
+                    <Label Text="{Binding TotalGastos, StringFormat='${0:F2}'}"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           HorizontalOptions="End" />
+                </VerticalStackLayout>
+            </Grid>
+        </Border>
+
+        <!-- PROPORCIÓN + BOTONES -->
+        <Border Grid.Row="2"
+                Margin="0,16,0,0"
+                BackgroundColor="#111827"
+                StrokeThickness="0"
+                Padding="16">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="24" />
+            </Border.StrokeShape>
+
+            <VerticalStackLayout Spacing="14">
+                <Label Text="Proporción de gastos"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       FontSize="14" />
+
+                <ProgressBar Progress="{Binding GastosProporcion}"
+                             HeightRequest="4"
+                             BackgroundColor="#020617"
+                             ProgressColor="#6366F1" />
+
+                <HorizontalStackLayout Spacing="10" Margin="0,8,0,0">
+                    <Button Text="Nuevo movimiento"
+                            Style="{StaticResource GradientButtonStyle}"
+                            WidthRequest="160"
+                            CornerRadius="24"
+                            Clicked="OnNewMovementClicked" />
+
+                    <Button Text="API"
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            BorderColor="#38BDF8"
+                            BorderWidth="1"
+                            CornerRadius="24"
+                            WidthRequest="70"
+                            Clicked="OnApiClicked" />
+
+                    <Button Text="Sensor"
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            BorderColor="#22C55E"
+                            BorderWidth="1"
+                            CornerRadius="24"
+                            WidthRequest="80"
+                            Clicked="OnSensorClicked" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Border>
+
+        <!-- LISTA DE MOVIMIENTOS -->
+        <Border Grid.Row="3"
+                Margin="0,20,0,0"
+                BackgroundColor="#111827"
+                StrokeThickness="0"
+                Padding="8,4">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="24" />
+            </Border.StrokeShape>
+
+            <CollectionView ItemsSource="{Binding Transactions}">
+                <CollectionView.EmptyView>
+                    <Grid Padding="20">
+                        <Label Text="Sin movimientos aún"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               TextColor="#9CA3AF" />
+                    </Grid>
+                </CollectionView.EmptyView>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Transaction">
+                        <SwipeView>
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+                                    <SwipeItem Text="Eliminar"
+                                               BackgroundColor="#EF4444"
+                                               IconImageSource="trash.png"
+                                               Invoked="OnDeleteSwipeItemInvoked"
+                                               CommandParameter="{Binding}" />
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+
+                            <Grid Padding="10"
+                                  ColumnDefinitions="*,Auto">
+                                <VerticalStackLayout Spacing="2">
+                                    <Label Text="{Binding Description}"
+                                           FontSize="14"
+                                           FontAttributes="Bold"
+                                           TextColor="White" />
+                                    <Label Text="{Binding Date, StringFormat='{0:dd/MM/yyyy}'}"
+                                           FontSize="12"
+                                           TextColor="#9CA3AF" />
+                                </VerticalStackLayout>
+
+                                <Label Grid.Column="1"
+                                       Text="{Binding Amount, StringFormat='${0:F2}'}"
+                                       FontAttributes="Bold"
+                                       FontSize="14"
+                                       VerticalTextAlignment="Center"
+                                       HorizontalTextAlignment="End"
+                                       TextColor="{Binding IsIncome, Converter={StaticResource AmountColor}}" />
+                            </Grid>
+                        </SwipeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Border>
+
+        <!-- CÍRCULO DECORATIVO ABAJO (OPCIONAL) -->
+        <Border Grid.Row="4"
+                Margin="0,30,0,0"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                WidthRequest="260"
+                HeightRequest="260"
+                StrokeThickness="0">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="130" />
+            </Border.StrokeShape>
+            <Border.Background>
+                <RadialGradientBrush Center="0.5,0.5" Radius="1.0">
+                    <GradientStop Color="#22C55E" Offset="0.0" />
+                    <GradientStop Color="#4C1D95" Offset="0.6" />
+                    <GradientStop Color="Transparent" Offset="1.0" />
+                </RadialGradientBrush>
+            </Border.Background>
+        </Border>
+
+    </Grid>
+</ContentPage>
