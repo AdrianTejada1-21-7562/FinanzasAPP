@@ -2,89 +2,79 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FinanzasApp.Views.RegisterPage"
-             Shell.NavBarIsVisible="False"
-             Style="{StaticResource PageBackgroundStyle}">
+             Shell.NavBarIsVisible="False">
 
-    <Grid>
-
-        <!-- REUTILIZAMOS FONDO CYBERPUNK (SIN ANIMACIÓN) -->
+    <Grid IgnoreSafeArea="True">
         <Grid InputTransparent="True">
-            <Frame WidthRequest="220"
-                   HeightRequest="220"
-                   CornerRadius="110"
-                   HasShadow="False"
-                   HorizontalOptions="End"
-                   VerticalOptions="Start"
-                   Margin="0,-60,-40,0"
-                   Opacity="0.6">
-                <Frame.Background>
-                    <RadialGradientBrush Center="0.3,0.3" Radius="0.9">
-                        <GradientStop Color="#3B82F6" Offset="0.0" />
-                        <GradientStop Color="#020617" Offset="1.0" />
+            <Ellipse x:Name="TopGlow"
+                     WidthRequest="300"
+                     HeightRequest="300"
+                     HorizontalOptions="Start"
+                     VerticalOptions="Start"
+                     Margin="-60,-40,0,0"
+                     Opacity="0.45">
+                <Ellipse.Fill>
+                    <RadialGradientBrush Center="0.3,0.2" Radius="0.9">
+                        <GradientStop Color="#57AEFF" Offset="0.0" />
+                        <GradientStop Color="#00000000" Offset="1.0" />
                     </RadialGradientBrush>
-                </Frame.Background>
-            </Frame>
+                </Ellipse.Fill>
+            </Ellipse>
 
-            <Frame WidthRequest="280"
-                   HeightRequest="280"
-                   CornerRadius="140"
-                   HasShadow="False"
-                   HorizontalOptions="Start"
-                   VerticalOptions="End"
-                   Margin="-60,0,0,-80"
-                   Opacity="0.7">
-                <Frame.Background>
-                    <RadialGradientBrush Center="0.5,0.5" Radius="1.0">
-                        <GradientStop Color="#ec4899" Offset="0.0" />
-                        <GradientStop Color="#020617" Offset="1.0" />
+            <Ellipse x:Name="BottomGlow"
+                     WidthRequest="360"
+                     HeightRequest="360"
+                     HorizontalOptions="End"
+                     VerticalOptions="End"
+                     Margin="0,0,-80,-120"
+                     Opacity="0.5">
+                <Ellipse.Fill>
+                    <RadialGradientBrush Center="0.7,0.8" Radius="1.0">
+                        <GradientStop Color="#8B5CF6" Offset="0.0" />
+                        <GradientStop Color="#00000000" Offset="1.0" />
                     </RadialGradientBrush>
-                </Frame.Background>
-            </Frame>
+                </Ellipse.Fill>
+            </Ellipse>
         </Grid>
 
-        <!-- CONTENIDO REGISTRO (SIMPLIFICADO) -->
-        <VerticalStackLayout Padding="24"
-                             Spacing="24"
-                             VerticalOptions="Center">
-
-            <VerticalStackLayout Spacing="4">
-                <Label Text="Crear cuenta"
-                       FontSize="26"
-                       FontAttributes="Bold"
-                       TextColor="White" />
-                <Label Text="Registra un usuario para acceder a FinanzasApp."
-                       FontSize="13"
-                       TextColor="{StaticResource TextGray}" />
-            </VerticalStackLayout>
-
-            <Frame Style="{StaticResource CardFrameStyle}">
-                <VerticalStackLayout Spacing="12">
-
-                    <Entry x:Name="UsernameEntry"
-                           Placeholder="Usuario"
-                           Style="{StaticResource InputStyle}" />
-
-                    <Entry x:Name="PasswordEntry"
-                           Placeholder="Contraseña"
-                           IsPassword="True"
-                           Style="{StaticResource InputStyle}" />
-
-                    <Entry x:Name="ConfirmEntry"
-                           Placeholder="Confirmar contraseña"
-                           IsPassword="True"
-                           Style="{StaticResource InputStyle}" />
-
-                    <Button Text="Registrar"
-                            Style="{StaticResource GradientButtonStyle}"
-                            Clicked="OnRegisterClicked" />
-
-                    <Button Text="Volver al inicio"
-                            BackgroundColor="#111827"
-                            TextColor="White"
-                            CornerRadius="999"
-                            Clicked="OnBackClicked" />
+        <ScrollView VerticalScrollBarVisibility="Never">
+            <VerticalStackLayout x:Name="RegisterContainer"
+                                 Padding="26,48"
+                                 Spacing="22"
+                                 VerticalOptions="Center">
+                <VerticalStackLayout Spacing="4" HorizontalOptions="Center">
+                    <Label Text="FinanzasApp" Style="{StaticResource TitleLabelStyle}" />
+                    <Label Text="Crear cuenta" Style="{StaticResource SubTitleLabelStyle}" />
                 </VerticalStackLayout>
-            </Frame>
-        </VerticalStackLayout>
+
+                <Border Style="{StaticResource CardBorderStyle}" Padding="20,22" StrokeThickness="0.6" Stroke="#1F2A44">
+                    <VerticalStackLayout Spacing="14">
+                        <Border Style="{StaticResource InputBorderStyle}">
+                            <Grid ColumnDefinitions="40,*" HeightRequest="52" VerticalOptions="Center">
+                                <Label Text="👤" HorizontalOptions="Center" VerticalOptions="Center" />
+                                <Entry x:Name="UsernameEntry" Grid.Column="1" Placeholder="Usuario" Style="{StaticResource InputEntryStyle}" Focused="OnInputFocused" Unfocused="OnInputUnfocused" />
+                            </Grid>
+                        </Border>
+
+                        <Border Style="{StaticResource InputBorderStyle}">
+                            <Grid ColumnDefinitions="40,*" HeightRequest="52" VerticalOptions="Center">
+                                <Label Text="🔒" HorizontalOptions="Center" VerticalOptions="Center" />
+                                <Entry x:Name="PasswordEntry" Grid.Column="1" Placeholder="Contraseña" IsPassword="True" Style="{StaticResource InputEntryStyle}" Focused="OnInputFocused" Unfocused="OnInputUnfocused" />
+                            </Grid>
+                        </Border>
+
+                        <Border Style="{StaticResource InputBorderStyle}">
+                            <Grid ColumnDefinitions="40,*" HeightRequest="52" VerticalOptions="Center">
+                                <Label Text="✅" HorizontalOptions="Center" VerticalOptions="Center" />
+                                <Entry x:Name="ConfirmEntry" Grid.Column="1" Placeholder="Confirmar contraseña" IsPassword="True" Style="{StaticResource InputEntryStyle}" Focused="OnInputFocused" Unfocused="OnInputUnfocused" />
+                            </Grid>
+                        </Border>
+
+                        <Button Text="Registrar" Style="{StaticResource PrimaryButtonStyle}" Clicked="OnRegisterClicked" />
+                        <Button Text="Volver al inicio" Style="{StaticResource SecondaryButtonStyle}" Clicked="OnBackClicked" />
+                    </VerticalStackLayout>
+                </Border>
+            </VerticalStackLayout>
+        </ScrollView>
     </Grid>
 </ContentPage>

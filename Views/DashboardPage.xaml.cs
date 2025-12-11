@@ -1,5 +1,7 @@
-﻿using System;
+using System;
 using System.IO;
+using System.Threading;
+using System.Threading.Tasks;
 using FinanzasApp.Models;
 using FinanzasApp.Services;
 using FinanzasApp.ViewModels;
@@ -10,6 +12,7 @@ namespace FinanzasApp.Views
     public partial class DashboardPage : ContentPage
     {
         private readonly DashboardViewModel _viewModel;
+        private CancellationTokenSource? _animationCts;
 
         public DashboardPage()
         {
@@ -28,18 +31,65 @@ namespace FinanzasApp.Views
         protected override async void OnAppearing()
         {
             base.OnAppearing();
+
+            _animationCts = new CancellationTokenSource();
+            _ = AnimateBackgroundAsync(_animationCts.Token);
+
+            if (MainContainer != null)
+            {
+                MainContainer.Opacity = 0;
+                MainContainer.TranslationY = 50;
+                await Task.WhenAll(
+                    MainContainer.FadeTo(1, 800, Easing.CubicOut),
+                    MainContainer.TranslateTo(0, 0, 800, Easing.CubicOut)
+                );
+            }
+
             await _viewModel.LoadAsync();
         }
 
-        // =========================================
-        // BOTONES
-        // =========================================
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            _animationCts?.Cancel();
+            _animationCts?.Dispose();
+            _animationCts = null;
+        }
+
+        private async Task AnimateBackgroundAsync(CancellationToken token)
+        {
+            await Task.Delay(120);
+            var random = new Random();
+
+            while (!token.IsCancellationRequested)
+            {
+                if (TopGlow == null || BottomGlow == null)
+                    break;
+
+                double topX = random.Next(-30, 30);
+                double topY = random.Next(-30, 30);
+                double bottomX = random.Next(-40, 40);
+                double bottomY = random.Next(-40, 40);
+                uint duration = (uint)random.Next(4500, 7200);
+
+                try
+                {
+                    await Task.WhenAll(
+                        TopGlow.TranslateTo(topX, topY, duration, Easing.SinInOut),
+                        BottomGlow.TranslateTo(bottomX, bottomY, duration, Easing.SinInOut)
+                    );
+                }
+                catch (TaskCanceledException)
+                {
+                    break;
+                }
+            }
+        }
 
         private async void OnNewMovementClicked(object sender, EventArgs e)
         {
             try
             {
-                // Nuevo -> sin TransactionId
                 await Shell.Current.GoToAsync(nameof(ExpenseDetailPage));
             }
             catch (Exception ex)
@@ -78,21 +128,13 @@ namespace FinanzasApp.Views
             }
         }
 
-        // =========================================
-        // ABRIR PARA EDITAR (tap en la card)
-        // =========================================
-
         private async void OnTransactionTapped(object sender, EventArgs e)
         {
-            if (sender is Frame frame && frame.BindingContext is Transaction tx)
+            if (sender is Border border && border.BindingContext is Transaction tx)
             {
                 await OpenTransactionForEditAsync(tx);
             }
         }
-
-        // =========================================
-        // SWIPE EDITAR
-        // =========================================
 
         private async void OnEditSwipeItemInvoked(object sender, EventArgs e)
         {
@@ -102,11 +144,10 @@ namespace FinanzasApp.Views
             }
         }
 
-        private async System.Threading.Tasks.Task OpenTransactionForEditAsync(Transaction tx)
+        private async Task OpenTransactionForEditAsync(Transaction tx)
         {
             try
             {
-                // Pasamos el Id como parámetro de query
                 string route = $"{nameof(ExpenseDetailPage)}?TransactionId={tx.Id}";
                 await Shell.Current.GoToAsync(route);
             }
@@ -117,10 +158,6 @@ namespace FinanzasApp.Views
                     "OK");
             }
         }
-
-        // =========================================
-        // SWIPE ELIMINAR
-        // =========================================
 
         private async void OnDeleteSwipeItemInvoked(object sender, EventArgs e)
         {

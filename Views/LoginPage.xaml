@@ -2,211 +2,143 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:FinanzasApp.ViewModels"
-             xmlns:converters="clr-namespace:FinanzasApp.Converters"
              x:Class="FinanzasApp.Views.LoginPage"
              x:DataType="viewModels:LoginViewModel"
-             Shell.NavBarIsVisible="False"
-             BackgroundColor="{StaticResource BackgroundDark}">
-
-    <ContentPage.Resources>
-        <converters:BoolToColorConverter x:Key="BoolToColorConverter" />
-    </ContentPage.Resources>
+             Shell.NavBarIsVisible="False">
 
     <Grid IgnoreSafeArea="True">
-
-        <!-- FONDO OSCURO CON DESTELLOS -->
+        <!-- Fondo degradado y halos -->
         <Grid InputTransparent="True">
-            <Border x:Name="BlueBlob"
-                    WidthRequest="260"
-                    HeightRequest="260"
-                    HorizontalOptions="End"
-                    VerticalOptions="Start"
-                    Margin="0,-60,-40,0"
-                    Opacity="0.55"
-                    StrokeThickness="0">
-                <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="130" />
-                </Border.StrokeShape>
-                <Border.Background>
+            <Ellipse x:Name="BlueBlob"
+                     WidthRequest="280"
+                     HeightRequest="280"
+                     HorizontalOptions="End"
+                     VerticalOptions="Start"
+                     Margin="0,-80,-40,0"
+                     Opacity="0.45">
+                <Ellipse.Fill>
                     <RadialGradientBrush Center="0.2,0.2" Radius="0.9">
-                        <GradientStop Color="#3B82F6" Offset="0.0" />
-                        <GradientStop Color="Transparent" Offset="1.0" />
+                        <GradientStop Color="#57AEFF" Offset="0.0" />
+                        <GradientStop Color="#00000000" Offset="1.0" />
                     </RadialGradientBrush>
-                </Border.Background>
-            </Border>
+                </Ellipse.Fill>
+            </Ellipse>
 
-            <Border x:Name="PinkBlob"
-                    WidthRequest="320"
-                    HeightRequest="320"
-                    HorizontalOptions="Start"
-                    VerticalOptions="End"
-                    Margin="-80,0,0,-120"
-                    Opacity="0.6"
-                    StrokeThickness="0">
-                <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="160" />
-                </Border.StrokeShape>
-                <Border.Background>
-                    <RadialGradientBrush Center="0.7,0.7" Radius="1.0">
-                        <GradientStop Color="#EC4899" Offset="0.0" />
-                        <GradientStop Color="Transparent" Offset="1.0" />
+            <Ellipse x:Name="PurpleBlob"
+                     WidthRequest="360"
+                     HeightRequest="360"
+                     HorizontalOptions="Start"
+                     VerticalOptions="End"
+                     Margin="-80,0,0,-120"
+                     Opacity="0.5">
+                <Ellipse.Fill>
+                    <RadialGradientBrush Center="0.7,0.8" Radius="1.0">
+                        <GradientStop Color="#8B5CF6" Offset="0.0" />
+                        <GradientStop Color="#00000000" Offset="1.0" />
                     </RadialGradientBrush>
-                </Border.Background>
-            </Border>
-
-            <BoxView Color="#CC020205" />
+                </Ellipse.Fill>
+            </Ellipse>
         </Grid>
 
-        <!-- CONTENIDO -->
+        <!-- Contenido -->
         <ScrollView VerticalScrollBarVisibility="Never">
             <VerticalStackLayout x:Name="LoginContainer"
-                                 Padding="28,40"
-                                 Spacing="28"
-                                 VerticalOptions="Center"
-                                 MinimumHeightRequest="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=Height}">
+                                 Padding="26,52"
+                                 Spacing="24"
+                                 VerticalOptions="Center">
 
-                <!-- CABECERA SIMPLE -->
-                <VerticalStackLayout Spacing="4"
-                                     HorizontalOptions="Center">
-                    <Label Text="FinanzasApp"
-                           FontSize="32"
-                           FontAttributes="Bold"
-                           TextColor="White" />
-
-                    <Label Text="Acceso"
-                           FontSize="13"
-                           TextColor="{StaticResource GrayText}" />
+                <VerticalStackLayout Spacing="4" HorizontalOptions="Center">
+                    <Label Text="FinanzasApp" Style="{StaticResource TitleLabelStyle}" />
+                    <Label Text="Acceso" Style="{StaticResource SubTitleLabelStyle}" />
                 </VerticalStackLayout>
 
-                <!-- TARJETA LOGIN MINIMALISTA -->
-                <Border BackgroundColor="{StaticResource CardDark}"
-                        Stroke="{StaticResource Primary}"
-                        StrokeThickness="1.2"
-                        Padding="22,24">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="22" />
-                    </Border.StrokeShape>
-                    <Border.Shadow>
-                        <Shadow Brush="{StaticResource Primary}"
-                                Offset="0,0"
-                                Radius="22"
-                                Opacity="0.22" />
-                    </Border.Shadow>
-
-                    <Grid RowDefinitions="Auto,Auto,Auto,Auto"
-                          RowSpacing="18">
-
-                        <!-- ENTRADAS -->
-                        <VerticalStackLayout Grid.Row="0"
-                                             Spacing="14">
-
-                            <Border BackgroundColor="{StaticResource DarkInput}"
-                                    Stroke="#334455"
-                                    StrokeThickness="1">
-                                <Border.StrokeShape>
-                                    <RoundRectangle CornerRadius="12" />
-                                </Border.StrokeShape>
-                                <Grid Padding="14,4">
-                                    <Entry Placeholder="Usuario"
+                <Border Style="{StaticResource CardBorderStyle}" Padding="18,20" StrokeThickness="0.6" Stroke="#1F2A44">
+                    <VerticalStackLayout Spacing="16">
+                        <VerticalStackLayout Spacing="12">
+                            <Border Style="{StaticResource InputBorderStyle}" x:Name="UserBorder">
+                                <Grid ColumnDefinitions="40,*" VerticalOptions="Center" HeightRequest="52">
+                                    <Label Text="👤" FontSize="18" VerticalOptions="Center" HorizontalOptions="Center" />
+                                    <Entry x:Name="UserEntry"
+                                           Grid.Column="1"
+                                           Placeholder="Usuario"
                                            Text="{Binding Username}"
-                                           FontSize="14"
-                                           TextColor="{StaticResource Primary}"
-                                           PlaceholderColor="#556677" />
+                                           Style="{StaticResource InputEntryStyle}"
+                                           Focused="OnInputFocused"
+                                           Unfocused="OnInputUnfocused" />
                                 </Grid>
                             </Border>
 
-                            <Border BackgroundColor="{StaticResource DarkInput}"
-                                    Stroke="#334455"
-                                    StrokeThickness="1">
-                                <Border.StrokeShape>
-                                    <RoundRectangle CornerRadius="12" />
-                                </Border.StrokeShape>
-                                <Grid Padding="14,4">
-                                    <Entry Placeholder="Contraseña"
-                                           Text="{Binding Password}"
+                            <Border Style="{StaticResource InputBorderStyle}" x:Name="PasswordBorder">
+                                <Grid ColumnDefinitions="40,*" VerticalOptions="Center" HeightRequest="52">
+                                    <Label Text="🔒" FontSize="18" VerticalOptions="Center" HorizontalOptions="Center" />
+                                    <Entry x:Name="PasswordEntry"
+                                           Grid.Column="1"
+                                           Placeholder="Contraseña"
                                            IsPassword="True"
-                                           FontSize="14"
-                                           TextColor="{StaticResource Primary}"
-                                           PlaceholderColor="#556677" />
+                                           Text="{Binding Password}"
+                                           Style="{StaticResource InputEntryStyle}"
+                                           Focused="OnInputFocused"
+                                           Unfocused="OnInputUnfocused" />
                                 </Grid>
                             </Border>
                         </VerticalStackLayout>
 
-                        <!-- BOTÓN LOGIN -->
-                        <Border Grid.Row="1"
-                                Margin="0,4,0,0"
-                                BackgroundColor="{StaticResource Primary}"
-                                Stroke="{StaticResource Primary}"
-                                StrokeThickness="2"
-                                HeightRequest="50">
-                            <Border.StrokeShape>
-                                <RoundRectangle CornerRadius="18" />
-                            </Border.StrokeShape>
-                            <Border.Shadow>
-                                <Shadow Brush="{StaticResource Primary}"
-                                        Offset="0,2"
-                                        Radius="18"
-                                        Opacity="0.55" />
-                            </Border.Shadow>
-
-                            <Border.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding LoginCommand}" />
-                            </Border.GestureRecognizers>
-
-                            <Grid Padding="18,0">
-                                <Label Text="Entrar"
-                                       HorizontalOptions="Center"
-                                       VerticalOptions="Center"
-                                       FontSize="16"
+                        <!-- Tips dinámicos -->
+                        <Border BackgroundColor="#0B1220" StrokeThickness="0" StrokeShape="RoundRectangle 14" Padding="14,10">
+                            <VerticalStackLayout Spacing="6">
+                                <Label Text="Tip"
                                        FontAttributes="Bold"
-                                       TextColor="Black" />
-                            </Grid>
+                                       TextColor="{StaticResource AccentPurple}" />
+                                <Label x:Name="DefaultTip"
+                                       Text="Mantén tus finanzas ordenadas y revisa tus movimientos a diario."
+                                       TextColor="{StaticResource TextGray}">
+                                    <Label.Triggers>
+                                        <DataTrigger TargetType="Label" Binding="{Binding Source={x:Reference UserEntry}, Path=IsFocused}" Value="True">
+                                            <Setter Property="IsVisible" Value="False" />
+                                        </DataTrigger>
+                                        <DataTrigger TargetType="Label" Binding="{Binding Source={x:Reference PasswordEntry}, Path=IsFocused}" Value="True">
+                                            <Setter Property="IsVisible" Value="False" />
+                                        </DataTrigger>
+                                    </Label.Triggers>
+                                </Label>
+
+                                <Label x:Name="UserTip"
+                                       Text="Usa un nombre único; así podrás identificar tus datos fácilmente."
+                                       TextColor="{StaticResource TextGray}" IsVisible="False">
+                                    <Label.Triggers>
+                                        <DataTrigger TargetType="Label" Binding="{Binding Source={x:Reference UserEntry}, Path=IsFocused}" Value="True">
+                                            <Setter Property="IsVisible" Value="True" />
+                                        </DataTrigger>
+                                    </Label.Triggers>
+                                </Label>
+
+                                <Label x:Name="PasswordTip"
+                                       Text="Crea una contraseña segura combinando números y letras."
+                                       TextColor="{StaticResource TextGray}" IsVisible="False">
+                                    <Label.Triggers>
+                                        <DataTrigger TargetType="Label" Binding="{Binding Source={x:Reference PasswordEntry}, Path=IsFocused}" Value="True">
+                                            <Setter Property="IsVisible" Value="True" />
+                                        </DataTrigger>
+                                    </Label.Triggers>
+                                </Label>
+                            </VerticalStackLayout>
                         </Border>
 
-                        <!-- REGISTRAR -->
-                        <HorizontalStackLayout Grid.Row="2"
-                                               HorizontalOptions="Center"
-                                               Spacing="6"
-                                               Margin="0,4,0,0">
-                            <Label Text="Crear cuenta"
-                                   FontSize="12"
-                                   TextColor="{StaticResource Primary}" />
-                            <Button Text="+"
-                                    FontSize="12"
-                                    WidthRequest="28"
-                                    HeightRequest="28"
-                                    CornerRadius="14"
-                                    BackgroundColor="Transparent"
-                                    BorderColor="{StaticResource Primary}"
-                                    BorderWidth="1"
-                                    TextColor="{StaticResource Primary}"
-                                    Command="{Binding RegisterCommand}" />
-                        </HorizontalStackLayout>
+                        <Button Text="Entrar" Style="{StaticResource PrimaryButtonStyle}" Command="{Binding LoginCommand}" />
+                        <Button Text="Crear cuenta" Style="{StaticResource SecondaryButtonStyle}" Command="{Binding RegisterCommand}" />
 
-                        <!-- MENSAJE ERROR -->
-                        <Label Grid.Row="3"
-                               Text="{Binding Message}"
-                               FontSize="12"
-                               TextColor="#FF0055"
-                               HorizontalTextAlignment="Center"
-                               FontAttributes="Bold">
+                        <Label Text="{Binding Message}" TextColor="#FF6B9C" FontAttributes="Bold" HorizontalTextAlignment="Center">
                             <Label.Triggers>
-                                <DataTrigger TargetType="Label"
-                                             Binding="{Binding Message}"
-                                             Value="">
+                                <DataTrigger TargetType="Label" Binding="{Binding Message}" Value="">
                                     <Setter Property="IsVisible" Value="False" />
                                 </DataTrigger>
-                                <DataTrigger TargetType="Label"
-                                             Binding="{Binding Message}"
-                                             Value="{x:Null}">
+                                <DataTrigger TargetType="Label" Binding="{Binding Message}" Value="{x:Null}">
                                     <Setter Property="IsVisible" Value="False" />
                                 </DataTrigger>
                             </Label.Triggers>
                         </Label>
-
-                    </Grid>
+                    </VerticalStackLayout>
                 </Border>
-
             </VerticalStackLayout>
         </ScrollView>
     </Grid>
