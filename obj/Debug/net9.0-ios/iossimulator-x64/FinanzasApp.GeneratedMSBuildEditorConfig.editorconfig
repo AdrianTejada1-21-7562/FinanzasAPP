@@ -1,0 +1,85 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net9.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FinanzasApp
+build_property.ProjectDir = C:\Users\Exteam\Downloads\Programcaion de dispositivos\FinanzasApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Exteam/Downloads/Programcaion de dispositivos/FinanzasApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinanzasApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Exteam/Downloads/Programcaion de dispositivos/FinanzasApp/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinanzasApp.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/Exteam/Downloads/Programcaion de dispositivos/FinanzasApp/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinanzasApp.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/Exteam/Downloads/Programcaion de dispositivos/FinanzasApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinanzasApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Exteam/Downloads/Programcaion de dispositivos/FinanzasApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinanzasApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Exteam/Downloads/Programcaion de dispositivos/FinanzasApp/Views/ApiPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinanzasApp.Views.ApiPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ApiPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ApiPage.xaml
+
+[C:/Users/Exteam/Downloads/Programcaion de dispositivos/FinanzasApp/Views/DashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinanzasApp.Views.DashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DashboardPage.xaml
+
+[C:/Users/Exteam/Downloads/Programcaion de dispositivos/FinanzasApp/Views/ExpenseDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinanzasApp.Views.ExpenseDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ExpenseDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ExpenseDetailPage.xaml
+
+[C:/Users/Exteam/Downloads/Programcaion de dispositivos/FinanzasApp/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinanzasApp.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[C:/Users/Exteam/Downloads/Programcaion de dispositivos/FinanzasApp/Views/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinanzasApp.Views.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RegisterPage.xaml
+
+[C:/Users/Exteam/Downloads/Programcaion de dispositivos/FinanzasApp/Views/SensorPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FinanzasApp.Views.SensorPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SensorPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SensorPage.xaml

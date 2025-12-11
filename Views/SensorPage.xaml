@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:FinanzasApp.ViewModels"
+             x:Class="FinanzasApp.Views.SensorPage"
+             x:DataType="viewModels:SensorViewModel"
+             BackgroundColor="#050816">
+
+    <Grid RowDefinitions="Auto,*"
+          Padding="16,32,16,16">
+
+        <!-- CABECERA -->
+        <Grid Grid.Row="0"
+              ColumnDefinitions="Auto,*">
+
+            <Button Text="←"
+                    WidthRequest="40"
+                    HeightRequest="40"
+                    CornerRadius="20"
+                    Clicked="OnBackClicked"
+                    BackgroundColor="#111827"
+                    TextColor="White"/>
+
+            <VerticalStackLayout Grid.Column="1"
+                                 Spacing="2"
+                                 Margin="12,0,0,0">
+                <Label Text="FinanzasApp"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       FontSize="14"/>
+
+                <Label Text="Sensor GPS"
+                       TextColor="#A5B4FC"
+                       FontSize="18"
+                       FontAttributes="Bold"/>
+            </VerticalStackLayout>
+        </Grid>
+
+        <!-- CONTENIDO -->
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Spacing="20">
+
+                <Frame HasShadow="False"
+                       Padding="20"
+                       BackgroundColor="#111827"
+                       CornerRadius="24">
+                    <VerticalStackLayout Spacing="12">
+                        <Label Text="Prueba de ubicación"
+                               FontAttributes="Bold"
+                               FontSize="18"
+                               TextColor="White"/>
+
+                        <Label Text="Pulsa el botón para obtener tu ubicación actual usando el GPS del dispositivo."
+                               FontSize="13"
+                               TextColor="#9CA3AF"/>
+
+                        <Button Text="OBTENER UBICACIÓN"
+                                Command="{Binding GetLocationCommand}"
+                                BackgroundColor="#22D3EE"
+                                TextColor="Black"
+                                FontAttributes="Bold"
+                                CornerRadius="999"
+                                Padding="18,10"/>
+
+                        <Label Text="COORDENADAS:"
+                               Margin="0,20,0,0"
+                               FontAttributes="Bold"
+                               TextColor="#9CA3AF"
+                               FontSize="13"/>
+
+                        <Label Text="{Binding LocationText}"
+                               TextColor="White"
+                               FontSize="14"/>
+
+                        <Label Text="DIRECCIÓN:"
+                               Margin="0,16,0,0"
+                               FontAttributes="Bold"
+                               TextColor="#9CA3AF"
+                               FontSize="13"/>
+
+                        <Label Text="{Binding AddressText}"
+                               TextColor="White"
+                               FontSize="14" />
+                    </VerticalStackLayout>
+                </Frame>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

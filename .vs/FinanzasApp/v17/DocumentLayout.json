@@ -1,0 +1,581 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\converter\\booltocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:converter\\booltocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\views\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:views\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\views\\expensedetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:views\\expensedetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\views\\sensorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:views\\sensorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\views\\sensorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:views\\sensorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\viewmodels\\sensorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:viewmodels\\sensorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\platforms\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:platforms\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\views\\expensedetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:views\\expensedetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\viewmodels\\expensedetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:viewmodels\\expensedetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\views\\dashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:views\\dashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\views\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:views\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\views\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:views\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\views\\apipage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:views\\apipage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\views\\apipage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:views\\apipage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\viewmodels\\apiviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:viewmodels\\apiviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\globalxmlns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:globalxmlns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|c:\\users\\exteam\\downloads\\programcaion de dispositivos\\finanzasapp\\finanzasapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{853B4771-ADBA-4541-9AAD-56DFD22E78A4}|FinanzasApp.csproj|solutionrelative:finanzasapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExpenseDetailPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\ExpenseDetailPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\ExpenseDetailPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\ExpenseDetailPage.xaml.cs",
+              "RelativeToolTip": "Views\\ExpenseDetailPage.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAiwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:53:49.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "Platforms\\Android\\AndroidManifest.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-12-11T12:54:45.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SensorPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\SensorPage.xaml",
+              "RelativeDocumentMoniker": "Views\\SensorPage.xaml",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\SensorPage.xaml",
+              "RelativeToolTip": "Views\\SensorPage.xaml",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAiwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-11T13:09:02.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SensorPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\SensorPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\SensorPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\SensorPage.xaml.cs",
+              "RelativeToolTip": "Views\\SensorPage.xaml.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:54:04.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\ViewModels\\DashboardViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\DashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\ViewModels\\DashboardViewModel.cs",
+              "RelativeToolTip": "ViewModels\\DashboardViewModel.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAiwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:48:29.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DashboardPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\DashboardPage.xaml",
+              "RelativeDocumentMoniker": "Views\\DashboardPage.xaml",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\DashboardPage.xaml",
+              "RelativeToolTip": "Views\\DashboardPage.xaml",
+              "ViewState": "AgIAALoAAAAAAAAAAAAiwMYAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-11T12:53:25.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "Views\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\LoginPage.xaml",
+              "RelativeToolTip": "Views\\LoginPage.xaml",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAcwNUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-11T12:53:00.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\LoginPage.xaml.cs",
+              "RelativeToolTip": "Views\\LoginPage.xaml.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAiwFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:53:08.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Styles.xaml",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Resources\\Styles\\Styles.xaml",
+              "RelativeDocumentMoniker": "Resources\\Styles\\Styles.xaml",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Resources\\Styles\\Styles.xaml",
+              "RelativeToolTip": "Resources\\Styles\\Styles.xaml",
+              "ViewState": "AgIAABQCAAAAAAAAAAAiwCICAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-11T15:56:19.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BoolToColorConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Converter\\BoolToColorConverter.cs",
+              "RelativeDocumentMoniker": "Converter\\BoolToColorConverter.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Converter\\BoolToColorConverter.cs",
+              "RelativeToolTip": "Converter\\BoolToColorConverter.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAkwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T18:08:25.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RegisterPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\RegisterPage.xaml",
+              "RelativeDocumentMoniker": "Views\\RegisterPage.xaml",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\RegisterPage.xaml",
+              "RelativeToolTip": "Views\\RegisterPage.xaml",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAiwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-11T16:37:07.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ExpenseDetailPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\ExpenseDetailPage.xaml",
+              "RelativeDocumentMoniker": "Views\\ExpenseDetailPage.xaml",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\ExpenseDetailPage.xaml",
+              "RelativeToolTip": "Views\\ExpenseDetailPage.xaml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAiwFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-11T13:08:49.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ExpenseDetailViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\ViewModels\\ExpenseDetailViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ExpenseDetailViewModel.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\ViewModels\\ExpenseDetailViewModel.cs",
+              "RelativeToolTip": "ViewModels\\ExpenseDetailViewModel.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAiwH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:48:34.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SensorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\ViewModels\\SensorViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\SensorViewModel.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\ViewModels\\SensorViewModel.cs",
+              "RelativeToolTip": "ViewModels\\SensorViewModel.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAiwGYAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:48:43.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DashboardPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\DashboardPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\DashboardPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\DashboardPage.xaml.cs",
+              "RelativeToolTip": "Views\\DashboardPage.xaml.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAiwJUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:53:21.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RegisterPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\RegisterPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\RegisterPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\RegisterPage.xaml.cs",
+              "RelativeToolTip": "Views\\RegisterPage.xaml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAUwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T16:37:19.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAiwEsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:48:24.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\AppShell.xaml.cs",
+              "RelativeToolTip": "AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:50:38.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\AppShell.xaml",
+              "RelativeDocumentMoniker": "AppShell.xaml",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\AppShell.xaml",
+              "RelativeToolTip": "AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-11T12:50:31.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAiwF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T16:36:24.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DataBaseService.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Services\\DataBaseService.cs",
+              "RelativeDocumentMoniker": "Services\\DataBaseService.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Services\\DataBaseService.cs",
+              "RelativeToolTip": "Services\\DataBaseService.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAiwG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:47:29.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "Services\\ApiService.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Services\\ApiService.cs",
+              "RelativeToolTip": "Services\\ApiService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:47:37.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ApiPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\ApiPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\ApiPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\ApiPage.xaml.cs",
+              "RelativeToolTip": "Views\\ApiPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:54:21.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ApiPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\ApiPage.xaml",
+              "RelativeDocumentMoniker": "Views\\ApiPage.xaml",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Views\\ApiPage.xaml",
+              "RelativeToolTip": "Views\\ApiPage.xaml",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAcwJIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-11T12:52:46.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:50:25.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAcwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-11T12:50:17.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ApiViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\ViewModels\\ApiViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ApiViewModel.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\ViewModels\\ApiViewModel.cs",
+              "RelativeToolTip": "ViewModels\\ApiViewModel.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAcwIgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:48:49.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\ViewModels\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\BaseViewModel.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\ViewModels\\BaseViewModel.cs",
+              "RelativeToolTip": "ViewModels\\BaseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:48:15.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Models\\Transaction.cs",
+              "RelativeDocumentMoniker": "Models\\Transaction.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Models\\Transaction.cs",
+              "RelativeToolTip": "Models\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:46:53.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:46:44.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:50:06.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "GlobalXmlns.cs",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\GlobalXmlns.cs",
+              "RelativeDocumentMoniker": "GlobalXmlns.cs",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\GlobalXmlns.cs",
+              "RelativeToolTip": "GlobalXmlns.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:50:36.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "FinanzasApp",
+              "DocumentMoniker": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\FinanzasApp.csproj",
+              "RelativeDocumentMoniker": "FinanzasApp.csproj",
+              "ToolTip": "C:\\Users\\Exteam\\Downloads\\Programcaion de dispositivos\\FinanzasApp\\FinanzasApp.csproj",
+              "RelativeToolTip": "FinanzasApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-11T12:47:42.629Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
